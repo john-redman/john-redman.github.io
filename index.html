@@ -1,7 +1,195 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Virtual CV - Stefan du Plooy</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="links">
+        <a href="#achievements-list">Achievements</a>
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">My Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="about">
+      <div class="left">
+        <h3>BSc IT Student</h3>
+        <div class="info">
+          <h2>I'm Stefan du Plooy</h2>
+          <p>Java | C | C++ | C# | Python | Delphi</p>
+          <div class="buttons">
+            <a href="documents/cv.pdf">
+              <button class="pdf">Get CV <i class="far fa-file"></i></button>
+            </a>
+            <button id="copyEmailBtn" class="email">
+              Copy Email <i class="far fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <a class="online" href="#"
+          ><i class="fas fa-circle"></i> Available For Job</a
+        >
+        <img src="assets/profile.png" />
+      </div>
+    </div>
+
+    <div class="achievements">
+      <div class="left">
+        <h3><i class="fas fa-circle"></i> Achievements</h3>
+        <div class="achievements-list">
+          <div class="item">
+            <div div id="achievements-list" class="achievements-info">
+              <h5 class="active">2024 (Semester 1)</h5>
+              <ul>
+                <li>
+                  Distinctions for all (4) of my university modules of 2024
+                  Semester 1
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="achievements-info">
+              <h5>2023</h5>
+              <ul>
+                <li>
+                  Distinctions for all (12) of my university modules of 2023
+                </li>
+                <li>
+                  Lab Assistant, employed by the university, for First Year User
+                  Interface Programming
+                </li>
+                <li>Golden Key Member</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="achievements-info">
+              <h5>2022</h5>
+              <ul>
+                <li>
+                  Distinctions for all (10) of my university modules of 2022
+                </li>
+                <li>
+                  First Place Academic Achiever for Computer Science and
+                  Information Systems in the Potchefstroom Campus for First
+                  Year, First Semester
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="achievements-info">
+              <h5>2021</h5>
+              <ul>
+                <li>Distinctions for all my subjects (7) on NSC</li>
+                <li>Academic Honors</li>
+                <li>Academic Top 20</li>
+                <li>Class Representative</li>
+                <li>
+                  Google Certification in The Fundamentals of Digital Marketing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-me" class="right">
+        <div class="item">
+          <a href="#">About Me</a>
+          <p>
+            I am a motivated and detail-oriented Information Technology student
+            currently going into my third year, set to graduate at the end of
+            2024 and pursue an honors program in 2025. I possess a strong
+            passion for computer science and information systems. I am actively
+            seeking opportunities to apply my technical skills in a dynamic and
+            collaborative environment. Currently, I am interested in building a
+            career in cyber security, machine learning, or software development.
+          </p>
+        </div>
+
+        <div class="item">
+          <a href="#">Problem Solving</a>
+          <p>
+            Resourceful in finding solutions through research and exploration.
+          </p>
+        </div>
+        <div class="item">
+          <a href="#">Adaptability</a>
+          <p>Open to adapting to new technologies and methodologies.</p>
+        </div>
+        <div class="item">
+          <a href="#">Communication</a>
+          <p>Ability to convey complex technical concepts in layman’s terms.</p>
+        </div>
+        <div class="item">
+          <a href="#">Teamwork</a>
+          <p>
+            Works effectively in team settings, contributing ideas and
+            supporting peers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="#">My Portfolio</a>
+      <div id="portfolio" class="socials">
+        <a
+          href="https://github.com/StefanDuPlooy"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/stefan-du-plooy-96906b206"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+      <a class="online" href="#"
+        ><i class="fas fa-circle"></i> Available For Job</a
+      >
+    </footer>
+
+    <script>
+      document
+        .getElementById("copyEmailBtn")
+        .addEventListener("click", function () {
+          // The email address you want to copy
+          var email = "stefanduplooy3@gmail.com";
+
+          // Create a temporary input element
+          var tempInput = document.createElement("input");
+          tempInput.value = email;
+          document.body.appendChild(tempInput);
+
+          // Select the email address
+          tempInput.select();
+          tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the email address
+          document.execCommand("copy");
+
+          // Remove the temporary element
+          document.body.removeChild(tempInput);
+
+          // Optionally, provide some feedback to the user
+          alert("Email address copied to clipboard!");
+        });
+    </script>
+  </body>
 </html>
