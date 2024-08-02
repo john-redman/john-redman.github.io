@@ -17,6 +17,7 @@ body {
     width: 100%;
     background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
     background-color: transparent;
+    z-index: 1000;
 }
 
 .logo {
@@ -81,6 +82,20 @@ body {
     justify-content: space-evenly;
 }
 
+/* Added styles for the hero image */
+.hero .intro-photo img {
+    position: absolute;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a neat effect */
+    margin-left: 350px;
+    top: 200px;
+    z-index: 200;
+}
+
 /* About section styles */
 .about {
     display: flex;
@@ -98,7 +113,7 @@ body {
 
 .about .about-image img {
     height: 400px;
-    width: 450px;
+    width: 600px;
     padding: 5rem 5rem 5rem 1rem;
 }
 
@@ -246,12 +261,6 @@ body {
     list-style: none;
 }
 
-
-
-
-
-
-/* utility classes */
 .greet-heading {
     font-size: 1.3rem;
     font-weight: lighter;
