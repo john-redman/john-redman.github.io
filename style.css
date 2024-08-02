@@ -147,7 +147,7 @@ body {
 }
 
 .portfolio .my-card .image img:hover {
-    transform: rotate(5deg);
+    transform: rotate(20deg);
 }
 
 /* Achievements section styles */
